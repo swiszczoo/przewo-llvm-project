@@ -110,6 +110,11 @@ New checks
 
   Warns when a struct or class uses const or reference (lvalue or rvalue) data members.
 
+- New :doc:`misc-przewozniczek-do-not-throw
+  <clang-tidy/checks/misc/przewozniczek-do-not-throw>` check.
+
+  FIXME: add release notes.
+
 New check aliases
 ^^^^^^^^^^^^^^^^^
 
