@@ -2483,6 +2483,7 @@ public:
        << "  Host CPU: " << CPU;
 #endif
     OS << '\n';
+    OS << "With extra checks for Przewo's inventions..." << '\n';
   }
   void operator=(bool OptionWasSpecified);
 };

@@ -110,8 +110,43 @@ New checks
 
   Warns when a struct or class uses const or reference (lvalue or rvalue) data members.
 
+- New :doc:`misc-przewozniczek-auto-forbidden
+  <clang-tidy/checks/misc/przewozniczek-auto-forbidden>` check.
+
+  FIXME: add release notes.
+
 - New :doc:`misc-przewozniczek-do-not-throw
   <clang-tidy/checks/misc/przewozniczek-do-not-throw>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-goto-forbidden
+  <clang-tidy/checks/misc/przewozniczek-goto-forbidden>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-no-break-continue-in-loops
+  <clang-tidy/checks/misc/przewozniczek-no-break-continue-in-loops>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-no-global-variables
+  <clang-tidy/checks/misc/przewozniczek-no-global-variables>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-no-magic-numbers
+  <clang-tidy/checks/misc/przewozniczek-no-magic-numbers>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-nonprocedural-code
+  <clang-tidy/checks/misc/przewozniczek-nonprocedural-code>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-only-private-fields
+  <clang-tidy/checks/misc/przewozniczek-only-private-fields>` check.
 
   FIXME: add release notes.
 

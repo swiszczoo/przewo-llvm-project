@@ -19,7 +19,14 @@
 #include "NoRecursionCheck.h"
 #include "NonCopyableObjects.h"
 #include "NonPrivateMemberVariablesInClassesCheck.h"
+#include "PrzewozniczekAutoForbiddenCheck.h"
 #include "PrzewozniczekDoNotThrowCheck.h"
+#include "PrzewozniczekGotoForbiddenCheck.h"
+#include "PrzewozniczekNoBreakContinueInLoopsCheck.h"
+#include "PrzewozniczekNoGlobalVariablesCheck.h"
+#include "PrzewozniczekNoMagicNumbersCheck.h"
+#include "PrzewozniczekNonproceduralCodeCheck.h"
+#include "PrzewozniczekOnlyPrivateFieldsCheck.h"
 #include "RedundantExpressionCheck.h"
 #include "StaticAssertCheck.h"
 #include "ThrowByValueCatchByReferenceCheck.h"
@@ -54,8 +61,22 @@ public:
         "misc-non-copyable-objects");
     CheckFactories.registerCheck<NonPrivateMemberVariablesInClassesCheck>(
         "misc-non-private-member-variables-in-classes");
+    CheckFactories.registerCheck<PrzewozniczekAutoForbiddenCheck>(
+        "misc-przewozniczek-auto-forbidden");
     CheckFactories.registerCheck<PrzewozniczekDoNotThrowCheck>(
         "misc-przewozniczek-do-not-throw");
+    CheckFactories.registerCheck<PrzewozniczekGotoForbiddenCheck>(
+        "misc-przewozniczek-goto-forbidden");
+    CheckFactories.registerCheck<PrzewozniczekNoBreakContinueInLoopsCheck>(
+        "misc-przewozniczek-no-break-continue-in-loops");
+    CheckFactories.registerCheck<PrzewozniczekNoGlobalVariablesCheck>(
+        "misc-przewozniczek-no-global-variables");
+    CheckFactories.registerCheck<PrzewozniczekNoMagicNumbersCheck>(
+        "misc-przewozniczek-no-magic-numbers");
+    CheckFactories.registerCheck<PrzewozniczekNonproceduralCodeCheck>(
+        "misc-przewozniczek-nonprocedural-code");
+    CheckFactories.registerCheck<PrzewozniczekOnlyPrivateFieldsCheck>(
+        "misc-przewozniczek-only-private-fields");
     CheckFactories.registerCheck<RedundantExpressionCheck>(
         "misc-redundant-expression");
     CheckFactories.registerCheck<StaticAssertCheck>("misc-static-assert");

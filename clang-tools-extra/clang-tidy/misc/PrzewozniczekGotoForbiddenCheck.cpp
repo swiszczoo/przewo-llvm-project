@@ -1,4 +1,4 @@
-//===--- PrzewozniczekDoNotThrowCheck.cpp - clang-tidy --------------------===//
+//===--- PrzewozniczekGotoForbiddenCheck.cpp - clang-tidy -----------------===//
 //
 // Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
 // See https://llvm.org/LICENSE.txt for license information.
@@ -6,7 +6,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "PrzewozniczekDoNotThrowCheck.h"
+#include "PrzewozniczekGotoForbiddenCheck.h"
 #include "clang/AST/ASTContext.h"
 #include "clang/ASTMatchers/ASTMatchFinder.h"
 
@@ -16,15 +16,15 @@ namespace clang {
 namespace tidy {
 namespace misc {
 
-void PrzewozniczekDoNotThrowCheck::registerMatchers(MatchFinder *Finder) {
-  Finder->addMatcher(cxxThrowExpr().bind("x"), this);
+void PrzewozniczekGotoForbiddenCheck::registerMatchers(MatchFinder *Finder) {
+  Finder->addMatcher(gotoStmt().bind("x"), this);
 }
 
-void PrzewozniczekDoNotThrowCheck::check(const MatchFinder::MatchResult &Result) {
-  const auto *MatchedDecl = Result.Nodes.getNodeAs<CXXThrowExpr>("x");
+void PrzewozniczekGotoForbiddenCheck::check(const MatchFinder::MatchResult &Result) {
+  const auto *MatchedDecl = Result.Nodes.getNodeAs<GotoStmt>("x");
   const auto &Location = MatchedDecl->getBeginLoc();
 
-  diag(Location, "Do not throw exceptions! They break control flow. [-8 points or more]");
+  diag(Location, "Goto is absolutely forbidden! [-100 points]");
 }
 
 } // namespace misc
