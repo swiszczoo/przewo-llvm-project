@@ -19,14 +19,18 @@
 #include "NoRecursionCheck.h"
 #include "NonCopyableObjects.h"
 #include "NonPrivateMemberVariablesInClassesCheck.h"
+#include "PrzewozniczekAlwaysNameParametersCheck.h"
 #include "PrzewozniczekAutoForbiddenCheck.h"
 #include "PrzewozniczekDoNotThrowCheck.h"
 #include "PrzewozniczekGotoForbiddenCheck.h"
+#include "PrzewozniczekInitInConstructorCheck.h"
+#include "PrzewozniczekMeaningfulNamesCheck.h"
 #include "PrzewozniczekNoBreakContinueInLoopsCheck.h"
 #include "PrzewozniczekNoGlobalVariablesCheck.h"
 #include "PrzewozniczekNoMagicNumbersCheck.h"
 #include "PrzewozniczekNonproceduralCodeCheck.h"
 #include "PrzewozniczekOnlyPrivateFieldsCheck.h"
+#include "PrzewozniczekSmartPointersForbiddenCheck.h"
 #include "RedundantExpressionCheck.h"
 #include "StaticAssertCheck.h"
 #include "ThrowByValueCatchByReferenceCheck.h"
@@ -61,12 +65,18 @@ public:
         "misc-non-copyable-objects");
     CheckFactories.registerCheck<NonPrivateMemberVariablesInClassesCheck>(
         "misc-non-private-member-variables-in-classes");
+    CheckFactories.registerCheck<PrzewozniczekAlwaysNameParametersCheck>(
+        "misc-przewozniczek-always-name-parameters");
     CheckFactories.registerCheck<PrzewozniczekAutoForbiddenCheck>(
         "misc-przewozniczek-auto-forbidden");
     CheckFactories.registerCheck<PrzewozniczekDoNotThrowCheck>(
         "misc-przewozniczek-do-not-throw");
     CheckFactories.registerCheck<PrzewozniczekGotoForbiddenCheck>(
         "misc-przewozniczek-goto-forbidden");
+    CheckFactories.registerCheck<PrzewozniczekInitInConstructorCheck>(
+        "misc-przewozniczek-init-in-constructor");
+    CheckFactories.registerCheck<PrzewozniczekMeaningfulNamesCheck>(
+        "misc-przewozniczek-meaningful-names");
     CheckFactories.registerCheck<PrzewozniczekNoBreakContinueInLoopsCheck>(
         "misc-przewozniczek-no-break-continue-in-loops");
     CheckFactories.registerCheck<PrzewozniczekNoGlobalVariablesCheck>(
@@ -77,6 +87,8 @@ public:
         "misc-przewozniczek-nonprocedural-code");
     CheckFactories.registerCheck<PrzewozniczekOnlyPrivateFieldsCheck>(
         "misc-przewozniczek-only-private-fields");
+    CheckFactories.registerCheck<PrzewozniczekSmartPointersForbiddenCheck>(
+        "misc-przewozniczek-smart-pointers-forbidden");
     CheckFactories.registerCheck<RedundantExpressionCheck>(
         "misc-redundant-expression");
     CheckFactories.registerCheck<StaticAssertCheck>("misc-static-assert");

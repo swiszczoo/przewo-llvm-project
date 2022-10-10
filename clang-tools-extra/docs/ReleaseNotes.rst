@@ -110,6 +110,11 @@ New checks
 
   Warns when a struct or class uses const or reference (lvalue or rvalue) data members.
 
+- New :doc:`misc-przewozniczek-always-name-parameters
+  <clang-tidy/checks/misc/przewozniczek-always-name-parameters>` check.
+
+  FIXME: add release notes.
+
 - New :doc:`misc-przewozniczek-auto-forbidden
   <clang-tidy/checks/misc/przewozniczek-auto-forbidden>` check.
 
@@ -122,6 +127,16 @@ New checks
 
 - New :doc:`misc-przewozniczek-goto-forbidden
   <clang-tidy/checks/misc/przewozniczek-goto-forbidden>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-init-in-constructor
+  <clang-tidy/checks/misc/przewozniczek-init-in-constructor>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-meaningful-names
+  <clang-tidy/checks/misc/przewozniczek-meaningful-names>` check.
 
   FIXME: add release notes.
 
@@ -147,6 +162,11 @@ New checks
 
 - New :doc:`misc-przewozniczek-only-private-fields
   <clang-tidy/checks/misc/przewozniczek-only-private-fields>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`misc-przewozniczek-smart-pointers-forbidden
+  <clang-tidy/checks/misc/przewozniczek-smart-pointers-forbidden>` check.
 
   FIXME: add release notes.
 

@@ -250,14 +250,18 @@ Clang-Tidy Checks
    `misc-no-recursion <misc/no-recursion.html>`_,
    `misc-non-copyable-objects <misc/non-copyable-objects.html>`_,
    `misc-non-private-member-variables-in-classes <misc/non-private-member-variables-in-classes.html>`_,
+   `misc-przewozniczek-always-name-parameters <misc/przewozniczek-always-name-parameters.html>`_,
    `misc-przewozniczek-auto-forbidden <misc/przewozniczek-auto-forbidden.html>`_,
    `misc-przewozniczek-do-not-throw <misc/przewozniczek-do-not-throw.html>`_,
    `misc-przewozniczek-goto-forbidden <misc/przewozniczek-goto-forbidden.html>`_,
+   `misc-przewozniczek-init-in-constructor <misc/przewozniczek-init-in-constructor.html>`_,
+   `misc-przewozniczek-meaningful-names <misc/przewozniczek-meaningful-names.html>`_, "Yes"
    `misc-przewozniczek-no-break-continue-in-loops <misc/przewozniczek-no-break-continue-in-loops.html>`_,
    `misc-przewozniczek-no-global-variables <misc/przewozniczek-no-global-variables.html>`_,
    `misc-przewozniczek-no-magic-numbers <misc/przewozniczek-no-magic-numbers.html>`_,
    `misc-przewozniczek-nonprocedural-code <misc/przewozniczek-nonprocedural-code.html>`_,
-   `misc-przewozniczek-only-private-fields <misc/przewozniczek-only-private-fields.html>`_, "Yes"
+   `misc-przewozniczek-only-private-fields <misc/przewozniczek-only-private-fields.html>`_,
+   `misc-przewozniczek-smart-pointers-forbidden <misc/przewozniczek-smart-pointers-forbidden.html>`_,
    `misc-redundant-expression <misc/redundant-expression.html>`_, "Yes"
    `misc-static-assert <misc/static-assert.html>`_, "Yes"
    `misc-throw-by-value-catch-by-reference <misc/throw-by-value-catch-by-reference.html>`_,

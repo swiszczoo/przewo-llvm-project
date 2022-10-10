@@ -39,14 +39,18 @@ add_clang_library(clangTidyMiscModule
   NoRecursionCheck.cpp
   NonCopyableObjects.cpp
   NonPrivateMemberVariablesInClassesCheck.cpp
+  PrzewozniczekAlwaysNameParametersCheck.cpp
   PrzewozniczekAutoForbiddenCheck.cpp
   PrzewozniczekDoNotThrowCheck.cpp
   PrzewozniczekGotoForbiddenCheck.cpp
+  PrzewozniczekInitInConstructorCheck.cpp
+  PrzewozniczekMeaningfulNamesCheck.cpp
   PrzewozniczekNoBreakContinueInLoopsCheck.cpp
   PrzewozniczekNoGlobalVariablesCheck.cpp
   PrzewozniczekNoMagicNumbersCheck.cpp
   PrzewozniczekNonproceduralCodeCheck.cpp
   PrzewozniczekOnlyPrivateFieldsCheck.cpp
+  PrzewozniczekSmartPointersForbiddenCheck.cpp
   RedundantExpressionCheck.cpp
   StaticAssertCheck.cpp
   ThrowByValueCatchByReferenceCheck.cpp
