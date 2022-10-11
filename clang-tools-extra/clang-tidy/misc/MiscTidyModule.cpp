@@ -30,6 +30,7 @@
 #include "PrzewozniczekNoMagicNumbersCheck.h"
 #include "PrzewozniczekNonproceduralCodeCheck.h"
 #include "PrzewozniczekOnlyPrivateFieldsCheck.h"
+#include "PrzewozniczekPassObjectsByReferenceCheck.h"
 #include "PrzewozniczekSmartPointersForbiddenCheck.h"
 #include "RedundantExpressionCheck.h"
 #include "StaticAssertCheck.h"
@@ -87,6 +88,8 @@ public:
         "misc-przewozniczek-nonprocedural-code");
     CheckFactories.registerCheck<PrzewozniczekOnlyPrivateFieldsCheck>(
         "misc-przewozniczek-only-private-fields");
+    CheckFactories.registerCheck<PrzewozniczekPassObjectsByReferenceCheck>(
+        "misc-przewozniczek-pass-objects-by-reference");
     CheckFactories.registerCheck<PrzewozniczekSmartPointersForbiddenCheck>(
         "misc-przewozniczek-smart-pointers-forbidden");
     CheckFactories.registerCheck<RedundantExpressionCheck>(

@@ -165,6 +165,11 @@ New checks
 
   FIXME: add release notes.
 
+- New :doc:`misc-przewozniczek-pass-objects-by-reference
+  <clang-tidy/checks/misc/przewozniczek-pass-objects-by-reference>` check.
+
+  FIXME: add release notes.
+
 - New :doc:`misc-przewozniczek-smart-pointers-forbidden
   <clang-tidy/checks/misc/przewozniczek-smart-pointers-forbidden>` check.
 

@@ -50,6 +50,7 @@ add_clang_library(clangTidyMiscModule
   PrzewozniczekNoMagicNumbersCheck.cpp
   PrzewozniczekNonproceduralCodeCheck.cpp
   PrzewozniczekOnlyPrivateFieldsCheck.cpp
+  PrzewozniczekPassObjectsByReferenceCheck.cpp
   PrzewozniczekSmartPointersForbiddenCheck.cpp
   RedundantExpressionCheck.cpp
   StaticAssertCheck.cpp
